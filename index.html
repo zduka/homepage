@@ -1,12 +1,312 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Peta Maj</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-    <h1>Hokus pokus</h1>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" id="brand" href="#page-top"><img id="zduka" alt="zduka" src="zduka.png" /> About</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#research">Research</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#cv">CV</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#teaching">Teaching</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="section-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="jumbotron" id="about">
+                        <img src="ja.png" alt="photo" id="photo"/>
+                        <p>
+                            I am a PhD student at <a href="http://www.fit.cvut.cz/en">FIT CTU</a> in Prague, co-advised by <a href="http://janvitek.org">Jan Vitek</a> and <a href="https://users.fit.cvut.cz/~janousej/">Jan Janousek</a>. Formerly, I worked for <a href="http://www.0xdata.com">0xdata</a> on distributed scalable big data analytics and <a href="http://www.snsys.com">SN Systems</a> on SONY Playstation 3 and PS Vita compilers &amp; toolchain.
+                        </p>
+
+                        <p>I am interested in design, analysis and optimalization of programming languages (mostly dynamic, currently <a href="">R</a>), blabla and embedded systems.</p>
+
+                        <p>I hold masters degree from <a href="http://www.fel.cvut.cz/en">FEE CTU</a> in Prague, I have been a graduate student at <a href="http://www.purdue.edu">Purdue</a>, IN, and I have spent a year at the <a href="http://www.bristol.ac.uk">University of Bristol</a>, UK.</p>
+                    </div>
+
+<!--
+                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
+                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="research" class="section-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Papers &amp; Posters</h1>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item papers noclick">
+                            <h4 class="list-group-item-heading">A fast abstract syntax tree interpreter for R</h4>
+                            <p class="list-group-item-text">Kalibera T., Maj, P., Morandat, F., Vitek, J.; VEE 2014</p>
+                        </a>
+                        <a href="other/testr.pdf" class="list-group-item papers">
+                            <h4 class="list-group-item-heading">testR – R language test driven specification</h4>
+                            <p class="list-group-item-text">Maj P., Kalibera T., Vitek J.; UseR! 2013, Best technical presentation award. </p>
+                        </a>
+                        <a href="#" class="list-group-item papers noclick">
+                            <h4 class="list-group-item-heading">A family of real- time Java benchmarks</h4>
+                            <p class="list-group-item-text">Kalibera, T., Hagelberg, J., Maj, P., Pizlo, F., Titzer, B. and Vitek, J.; Concurrency and Computation: Practice and Experience, 23: n/a. Doi: 10.1002/cpe.1677, 2011</p>
+                        </a>
+                        <a href="#" class="list-group-item papers noclick">
+                            <h4 class="list-group-item-heading">Schism: Fragmentation-Tolerant Real-Time Garbage Collection</h4>
+                            <p class="list-group-item-text">Pizlo F., Ziarek L., Maj P., Hosking A., Vitek J., Blanton E.; PLDI 2010 </p>
+                        </a>
+                        <a href="#" class="list-group-item papers noclick">
+                            <h4 class="list-group-item-heading">High-level Programming of Embedded Hard Real-Time Systems</h4>
+                            <p class="list-group-item-text">Pizlo F., Ziarek L., Blanton E., Maj P., Vitek J.; EuroSYS 2010 </p>
+                        </a>
+<!--
+                        <a href="#" class="list-group-item papers">
+                            <h4 class="list-group-item-heading"> </h4>
+                            <p class="list-group-item-text"> </p>
+                        </a>
+-->
+                    </div>
+                    <h1>Conferences</h1>
+                    <ul class="list-group">
+                        <li class="list-group-item papers">
+                            <div class="conferenceYear">2016</div>
+                            <a href="">ECOOP</a>
+                            <span class="label label-primary">SV co-chair</span>
+                        </li>
+                        <li class="list-group-item papers">
+                            <div class="conferenceYear"> </div>
+                            <a href="">PLDI</a>
+                             <span class="label label-info">Artifact Evaluation</span>
+                        </li>
+                        <li class="list-group-item papers">
+                            <div class="conferenceYear">2015</div>
+                            ECOOP
+                            <span class="label label-primary">Housing chair</span>
+                        </li>
+                        <li class="list-group-item papers">
+                            <div class="conferenceYear">2014</div>
+                            PLDI
+                            <span class="label label-default">SV</span>
+                        </li>
+                        <li class="list-group-item papers">
+                            <div class="conferenceYear">2013</div>
+                            UseR!
+                            <span class="label label-success">Best technical poster award</span>
+                        </li>
+                        <li class="list-group-item papers">
+                            <div class="conferenceYear"> </div>
+                            SPLASH
+                            <span class="label label-default">SV</span>
+                        </li>
+                        <li class="list-group-item papers">
+                            <div class="conferenceYear"> </div>
+                            DALI (Dynamic Languages for Scalable Data Analytics)
+                            <span class="label label-default">by invitation</span>
+                        </li>
+                        <li class="list-group-item papers">
+                            <div class="conferenceYear">2010</div>
+                            VEESC (Virtual Execution Environments for Scientific Computing)
+                            <span class="label label-default">by invitation</span>
+                        </li>
+                        <li class="list-group-item papers">
+                            <div class="conferenceYear">2009</div>
+                            OOPSLA
+                            <span class="label label-default">sv</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="cv" class="section-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Education</h1>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">2016 - 2020 (expected) : PhD</h4>
+                            <p class="list-group-item-text"><a href="http://www.fit.cvut.cz/en">FIT CTU</a> Prague. Co-advised by <a href="http://janvitek.org">Jan Vitek</a> and <a href="https://users.fit.cvut.cz/~janousej/">Jan Janousek</a>. Expected thesis title: <i>Speculative Optimizations of Dynamic Languages</i> </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">2009 - 2010 (cancelled) : PhD</h4>
+                            <p class="list-group-item-text"><a href="http://cs.purdue.edu">Department of Computer Science, Purdue University</a>, West Lafayette, IN. Advised by <a href="http://janvitek.org">Jan Vitek</a>. Cancelled for personal resons. GPA after first year 3.93. Qual exams from Programming Languages, Operating Systems, Algorithm Design, Analysis and Implementation.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">2007 - 2009 : MEng, s.c.l. </h4>
+                            <p class="list-group-item-text"><a href="http://www.fel.cvut.cz/en">FEE CTU</a> Prague. Thesis title: <a href="other/crosscheck.pdf"><i>Source Code Plagiarism Detection</i></a> <span class="label label-success">Dean's award for outstanding Master thesis</span></p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">2006 - 2007 : Erasmus studentship</h4>
+                            <p class="list-group-item-text"><a href="http://www.bristol.ac.uk">University of Bristol</a>, UK. 1st class degree from major subjects taken. Advised by <a href="https://www.linkedin.com/in/henkmuller">Henk Muller</a></p>
+                        </li>
+                    </ul>
+                    <h1>Work Experience</h1>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">2013 - 2015 : Researcher in the field of virtual machines (independent contractor)</h4>
+                            <p class="list-group-item-text">
+                                Author of FlaiR – a static and dynamic analysis framework for the R language. One of the developers of the <a href="https://github.com/allr/purdue-fastr">FastR</a> VM and runtime for the R language. Responsible for the static and dynamic analysis of the R code and related optimizations. Author of <a href="https://github.com/allr/testr-py"></a>TestR</a> framework for R language test driven specification, testing and benchmarking R Vms. Design and implementation of continuous program analysis framework, optimizations and invalidation. Mentoring junior researchers.
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">2012 : Senior Developer at <a href="http://www.0xdata.com">0xdata</a>. inc.</h4>
+                            <p class="list-group-item-text">
+                                Working on the design & implementation of almost all parts of the distributed non SQL big data store and analytics framework including core messaging, user-level API, distributed execution, initial implementation of R-like distributed queries on the cloud system.
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">2010 - 2012 : Compiler Engineer at <a href="http://www.snsys.com">SNSystems</a> Ltd.</h4>
+                            <p class="list-group-item-text">
+                                Responsible for correcting bugs & developing new features for the SN compiler that is used by most developers for Sony Playstation 3, PSP and PS Vita. Apart from the compiler, also responsible for implementing PS Vita assembler from scratch (main developer).
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="teaching" class="section-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Classes</h1>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">Code Generation (Spring 2016) <span class="label label-default">TA</span></h4>
+                            <p class="list-group-item-text">
+                                Theoretical and practical aspects of an optimizing compiler backend implementation (using LLVM). <a href="http://bilakniha.cvut.cz/cs/predmet1431006.html">MI-GEN</a> (in Czech)
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">Build a JIT with LLVM (Fall 2016), with Jan Vitek and Oli Fluckiger</h4>
+                            <p class="list-group-item-text">
+                                Source code available at <a href="https://github.com/rift-lecture/rift">github</a>.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <p>Please arrange consultations for current courses by <a class="page-scroll" href="#contact">email</a>.</p>
+                    <p>I have always enjoyed teaching and in the past, I taught Java, C++, Virtual Macgines and Embedded systems at university, or high school level. In 2015 I was awarded Google <a href="other/codeweek.pdf">CodeWeek</a> funding for embedded programming for high school kids at Arcibiskupske Gymnazium in Prague.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="contact_name">
+                        Petr Maj
+                    </p>
+                    <p class="contact_address">
+                        Department of Theoretical Computer Science<br/>
+                        Faculty of Information Technology, Czech Technical University<br/>
+                        Thakurova 9, 16000 Praha 6<br/>
+                        Czech Republic
+                    </p>
+                    <p class="contact_email">
+                        <a href="mailto:majpetr@fit.cvut.cz">majpetr@fit.cvut.cz</a>
+                    </p>
+                    <p class="contact_scholar">
+                        <a href="https://scholar.google.com/citations?user=Zk9SQUAAAAAJ&hl=en">h-index: 4</a>
+                    </p>
+                    <p class="contact_skype">
+                        <a href="skype:peta.maj82?chat">peta.maj82</a>
+                    </p>
+                    <p class="contact_linkedin">
+                        <a href="https://www.linkedin.com/in/petr-maj-30078416">Linked-In</a>
+                    </p>
+                    <p class="contact_github">
+                        <a href="https://github.com/petamaj">petamaj@github</a>
+                    </p>
+                    <p class="contact_bitbucket">
+                        <a href="https://bitbucket.org/peta/">peta@bitbucket</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container" id="footer">
+        Created using <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="http://startbootstrap.com/template-overviews/scrolling-nav/">Scrolling Nav</a> from Start Bootstrap and <a href="http://glyphicons.com/">Glyphicons</a>.
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
 
 </body>
+
 </html>

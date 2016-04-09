@@ -1,0 +1,124 @@
+#zduka {
+    width:32px;
+    height:32px;
+    display:inline;
+    margin-right:10px;
+    margin-top:0px;
+    padding:0px;
+    position:relative;
+    top:-3px;
+}
+
+#brand {
+    position:relative;
+    top:-5px;
+}
+
+#about {
+    text-align:left;
+}
+
+#photo {
+    width:300px;
+    height:300px;
+    float:left;
+    margin-right:20px;
+}
+
+#footer {
+    position:relative;
+    top:-80px;
+    color:#bbb;
+    font-size:small;
+}
+
+.noclick {
+    cursor:default;
+}
+
+.papers {
+    text-align:left;
+}
+
+.conferenceYear {
+    display:inline-block;
+    width:50px;
+    font-weight:bold;
+}
+
+
+
+.contact_name {
+    padding-top:40px;
+    padding-left:40px;
+    font-size:large;
+    font-weight:bold;
+}
+
+.contact_address {
+    padding-left:40px;
+    font-size:large;
+    background-image:url("glyphicons_free/glyphicons/png/glyphicons-243-map-marker.png");
+    background-repeat:no-repeat;
+    background-position:0px 6px;
+}
+
+.contact_email {
+    padding-left:40px;
+    font-size:large;
+    background-image:url("glyphicons_free/glyphicons/png/glyphicons-11-envelope.png");
+    background-repeat:no-repeat;
+    background-position:0px 6px;
+}
+
+.contact_scholar {
+    padding-left:40px;
+    font-size:large;
+    background-image:url("glyphicons_free/glyphicons/png/glyphicons-501-education.png");
+    background-repeat:no-repeat;
+    background-position:0px 6px;
+}
+
+.contact_skype {
+    padding-left:40px;
+    font-size:large;
+    background-image:url("glyphicons_free/glyphicons-social/png/glyphicons-social-39-skype.png");
+    background-repeat:no-repeat;
+    background-position:0px 2px;
+}
+
+.contact_linkedin {
+    padding-left:40px;
+    font-size:large;
+    background-image:url("glyphicons_free/glyphicons-social/png/glyphicons-social-18-linked-in.png");
+    background-repeat:no-repeat;
+    background-position:0px 0px;
+}
+
+.contact_github {
+    padding-left:40px;
+    font-size:large;
+    background-image:url("glyphicons_free/glyphicons-social/png/glyphicons-social-22-github.png");
+    background-repeat:no-repeat;
+    background-position:0px 2px;
+}
+
+.contact_bitbucket {
+    padding-left:40px;
+    font-size:large;
+    background-image:url("glyphicons_free/glyphicons-social/png/glyphicons-social-61-bitbucket.png");
+    background-repeat:no-repeat;
+    background-position:0px 2px;
+}
+
+body {
+    padding-top:65px;
+}
+
+p {
+    text-align:left;
+}
+
+h4 {
+    text-align:left;
+}
