@@ -25,6 +25,10 @@
     margin-right:20px;
 }
 
+#footer_padding {
+    height:150px;
+}
+
 #footer {
     position:relative;
     top:-80px;
