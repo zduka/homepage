@@ -19,10 +19,11 @@
 }
 
 #photo {
-    max-width:300px;
-    max-height:300px;
+    max-width:360px;
+    max-height:360px;
     margin: 0 auto;
     display:block;
+    border-radius:50%;
 }
 
 #footer_padding {
